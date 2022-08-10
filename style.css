@@ -1,0 +1,263 @@
+@font-face {
+  font-family: RegularPoppins;
+  src: url(poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: SemiBoldPoppins;
+  src: url(poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: FullBoldPoppins;
+  src: url(poppins/Poppins-Bold.ttf);
+}
+
+body {
+  font-family: RegularPoppins;  
+  background-color: #f0f2f5;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+div[name='Signup-Form'] {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+form[name='signin']{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+
+.message {
+  background: #F2DEDE;
+  font-family: FullBoldPoppins;
+  color: #A94442;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+}
+
+select {
+  padding: 10px 15px 10px 25px;
+  font-size: 16px;
+  font-family: SemiBoldPoppins;
+  margin-bottom: 7%;
+  border-radius: 8px;
+  border: 2px solid #d3d6e2;
+  outline: none !important;
+  transition: 0.4s ease;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.signup-containter, .signin-container {
+  z-index: 1;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 3% 4% 4% 4%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+  /* transition: 0.2s; */
+}
+.greeting {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.action-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 2%;
+}
+
+.action-menu input{
+  margin-bottom: 0 !important;
+  margin-right: 2% !important;
+}
+
+.action-menu button{
+  margin: 0 !important;
+}
+
+.greeting h3{
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+}
+
+.greeting a{
+  margin: 0;
+  padding: 12px 25px 12px 25px;
+}
+
+table {
+  border-collapse:separate; 
+  border-spacing: 0 1em;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+th, td {
+  font-size: 14px;
+}
+
+td[name='username']{
+  color: #3d3d3d;
+  font-family: FullBoldPoppins;
+}
+
+th {
+  font-family: FullBoldPoppins;
+  background-color: #d3d6e2;
+  padding:6px;
+  margin-right: 2px;
+  color: #3d3d3d;
+  /* border-radius: 5px; */
+}
+.signup-containter {
+  display: block;
+}
+
+.personalInformation-containter, .Credential-containter {
+  z-index: 0;
+  margin-left: 2%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 3% 4% 4% 4%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h2, h6{ 
+  margin: 5% 0 5% 0;
+  text-align: center;
+  transition: 0.5s;
+}
+
+h5{ 
+  margin: 4% 0 4% 0;
+  text-align: center;
+  transition: 0.5s;
+}
+
+input{
+  padding: 10px 15px 10px 25px;
+  font-size: 16px;
+  font-family: SemiBoldPoppins;
+  margin-bottom: 7%;
+  border-radius: 8px;
+  border: 2px solid #d3d6e2;
+  outline: none !important;
+}
+
+input:focus{
+  border: 2px solid #772b2d !important;
+}
+
+
+button{
+  background-color: #af5354;
+  color: white;
+  border-radius: 8px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px 10px 25px;
+  font-size: 16px;
+  font-family: SemiBoldPoppins;
+  transition: 0.3s ease;
+}
+
+a[name='SetupAccount'], a[name='BackToSignIn'], a[name='SignUp']{
+  color: #3d3d3d;
+  border-radius: 8px;
+  background-color: #e3e3e3;
+  padding: 10px 15px 10px 25px;
+  text-decoration: none;
+  margin-top: 6%;
+  font-size: 16px;
+  align-self: center;
+  width: 85%;
+  align-items: center;
+  text-align: center;
+  font-family: SemiBoldPoppins;
+  transition: 0.2s ease;
+}
+
+a[name='Register']{
+  background-color: #af5354;
+  color: white;
+  border-radius: 8px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px 10px 25px;
+  font-size: 16px;
+  font-family: SemiBoldPoppins;
+  transition: 0.3s ease;
+}
+
+a{
+  color: #3d3d3d;
+  border-radius: 8px;
+  background-color: #e3e3e3;
+  padding: 10px 15px 10px 25px;
+  text-decoration: none;
+  margin-top: 6%;
+  font-size: 16px;
+  text-align: center;
+  font-family: SemiBoldPoppins;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  background-color: #772b2d;
+  color: #fff;
+}
+
+button:hover{
+  background-color: #772b2d;
+}
